@@ -1,3 +1,2 @@
-<div class="slideshow-container">
-  <img *ngIf="showImage" class="img-slideshow" src="assets/img/{{images[currentImage]}}" alt="image_light_bulb">
-</div>
+<app-menu [darkMode]="router.url !== '/' "></app-menu>
+<router-outlet></router-outlet>
